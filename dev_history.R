@@ -10,6 +10,8 @@ setwd(
 
 # 2025-06-04 ====
 
+## GET OSM FEATURE ====
+
 library(osmdata)
 
 poi = opq_osm_id(
@@ -23,3 +25,10 @@ getElement(
   poi
   , name = "osm_points"
 )
+
+
+# 2025-06-05 ====
+
+## UNIT TESTING ====
+
+tinytest::run_test_dir()
